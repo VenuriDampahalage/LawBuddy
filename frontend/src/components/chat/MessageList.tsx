@@ -4,13 +4,13 @@ import {
   Copy,
   LoaderCircle,
   RotateCcw,
-  Scale,
   Square,
   ThumbsDown,
   ThumbsUp,
 } from 'lucide-react'
 import { useState } from 'react'
 
+import botLogo from '../../assets/bot-logo.png'
 import { answerAsText, type Citation, sendFeedback, type Stage, STAGE_LABEL } from '../../lib/chat'
 import { useUI } from '../../lib/ui'
 import Answer from './Answer'
@@ -77,12 +77,13 @@ function AssistantMessage({ m, conversationId, onRetry, onFeedback }: {
 
   return (
     <li className="flex gap-3">
-      <span
+      <img
+        src={botLogo}
+        alt=""
         aria-hidden
-        className="mt-0.5 grid size-8 shrink-0 place-items-center rounded-full bg-teal/15 text-teal"
-      >
-        <Scale size={16} />
-      </span>
+        draggable={false}
+        className="mt-0.5 size-9 shrink-0"
+      />
       <div className="min-w-0 flex-1">
         {m.content && <Answer text={m.content} onCite={cite} />}
 
