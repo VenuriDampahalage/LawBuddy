@@ -38,9 +38,13 @@ export default function Footer({ className = '' }: { className?: string }) {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-5 text-xs text-white/60 sm:flex-row sm:justify-between">
           <p>LawBuddy provides general legal information, not legal advice.</p>
+        </div>
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-5 text-xs text-white/60 sm:flex-row sm:justify-between">
           <p>© {YEAR} LawBuddy</p>
+          <p>Designed & Developed by Kumuditha Venuri Dampahalage</p>
         </div>
       </div>
+      
     </footer>
   )
 }
