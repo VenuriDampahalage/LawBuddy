@@ -139,7 +139,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 pt-14 text-center sm:pt-20">
         <p className="inline-flex items-center gap-2 rounded-full border border-teal/40 bg-white px-4 py-1.5 text-sm font-semibold">
           <Sparkles size={16} className="text-teal" aria-hidden />
-          AI-powered legal assistant
+          AI powered legal assistant
         </p>
 
         <h1 className="mt-6 text-5xl leading-[1.05] font-extrabold tracking-tight sm:text-7xl">
