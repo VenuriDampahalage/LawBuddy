@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+/*
+  LawBuddy palette: exactly three colours.
+    navy  #142D4E  primary: navbar, sidebar, buttons, headings (text uses navy at reduced opacity)
+    white #FFFFFF  backgrounds, cards, forms
+    teal  #2A9D8F  accents: highlights, icons, active states (light tints for soft fills)
+  Tailwind's default palette is removed so no other colour can slip in.
+*/
+@theme {
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-navy: #142d4e;
+  --color-teal: #2a9d8f;
+
+  --font-sans: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 1px 2px rgb(20 45 78 / 0.04), 0 8px 24px rgb(20 45 78 / 0.06);
+  --shadow-lift: 0 2px 4px rgb(20 45 78 / 0.05), 0 16px 40px rgb(20 45 78 / 0.10);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-navy antialiased;
+  }
+  ::selection {
+    @apply bg-teal/20;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-teal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

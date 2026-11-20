@@ -1,0 +1,25 @@
+{"id": "custody-24h", "question": "Can the police keep me in custody for more than 24 hours without taking me to a magistrate?", "expect": [["Code of Criminal Procedure Act", "s.37"]], "must_mention": [["24 hours", "twenty-four hours"]]}
+{"id": "custody-child-abuse", "question": "If someone is arrested for child abuse, how long can the police hold them?", "expect": [["Code of Criminal Procedure Act", "s.43A"]], "must_mention": [["three days", "3 days"]]}
+{"id": "investigation-24h", "question": "What happens if the police cannot finish their investigation within 24 hours of the arrest?", "expect": [["Code of Criminal Procedure Act", "s.115"]], "must_mention": [["Magistrate"]]}
+{"id": "special-provisions-48h", "question": "Can detention in police custody be extended to 48 hours?", "expect": [["Code of Criminal Procedure (Special Provisions) Act, No. 2 of 2013", "s.2"]], "must_mention": [["48 hours", "forty-eight hours"]]}
+{"id": "arrest-how-made", "question": "How must a police officer make an arrest? Do they have to tell me why I'm being arrested?", "expect": [["Code of Criminal Procedure Act", "s.23"]], "must_mention": [["charge", "allegation"]]}
+{"id": "private-arrest", "question": "Can an ordinary person arrest someone they see committing a crime?", "expect": [["Code of Criminal Procedure Act", "s.35"]], "must_mention": [["private person"]]}
+{"id": "search-woman", "question": "Can a male police officer search a woman who has been arrested?", "expect": [["Code of Criminal Procedure Act", "s.30"]], "must_mention": [["female", "woman"]]}
+{"id": "search-arrested", "question": "Are the police allowed to search me after arresting me?", "expect": [["Code of Criminal Procedure Act", "s.29"]], "must_mention": []}
+{"id": "escape-retake", "question": "If a person escapes from police custody, can they be chased and arrested again?", "expect": [["Code of Criminal Procedure Act", "s.42"]], "must_mention": [["pursue", "arrest"]]}
+{"id": "magistrate-visits", "question": "Does a Magistrate have to visit police stations to check on suspects?", "expect": [["Code of Criminal Procedure Act", "s.43B"], ["Code of Criminal Procedure (Amendment) Act, No. 14 of 2021", "s.2"]], "expect_mode": "any", "must_mention": [["month"]]}
+{"id": "judgment-copy-fee", "question": "How can I get a copy of a judgment in a criminal case, and do I have to pay for it?", "expect": [["Code of Criminal Procedure Act", "s.442"], ["Code of Criminal Procedure (Amendment) Act, No. 18 of 2022", "s.2"]], "expect_mode": "any", "must_mention": [["free"]]}
+{"id": "hacking", "question": "Someone logged into my email account without my permission. Is that a crime?", "expect": [["Computer Crime Act", "s.3"]], "must_mention": [["unauthorised", "without lawful authority"]]}
+{"id": "hacking-to-commit", "question": "What is the penalty for accessing a computer without permission in order to commit another offence?", "expect": [["Computer Crime Act", "s.4"]], "must_mention": [["two hundred thousand", "200,000", "five years"]]}
+{"id": "stolen-data", "question": "Is it an offence to buy or download information that someone else obtained illegally from a computer?", "expect": [["Computer Crime Act", "s.7"]], "must_mention": []}
+{"id": "illegal-devices", "question": "Is it illegal to sell software or devices made for hacking into computers?", "expect": [["Computer Crime Act", "s.9"]], "must_mention": []}
+{"id": "computer-compensation", "question": "Can a court order compensation for damage caused by a computer crime?", "expect": [["Computer Crime Act", "s.14"]], "must_mention": [["compensation"]]}
+{"id": "computer-definition", "question": "What does 'computer' mean under the Computer Crime Act?", "expect": [["Computer Crime Act", "s.38"]], "expect_definition": true, "must_mention": [["information processing", "process information", "processing capabilit"]]}
+{"id": "art-14a", "question": "What does Article 14A of the Constitution say?", "expect": [["Constitution", "Art.14A"]], "must_mention": [["information"]]}
+{"id": "arbitrary-arrest", "question": "What are my constitutional rights if I am arrested?", "expect": [["Constitution", "Art.13"]], "must_mention": [["reason", "grounds"]]}
+{"id": "torture", "question": "Does the Constitution protect people from torture?", "expect": [["Constitution", "Art.11"]], "must_mention": [["torture"]]}
+{"id": "equality", "question": "Is discrimination on the grounds of religion or sex allowed under the Constitution?", "expect": [["Constitution", "Art.12"]], "must_mention": [["discriminat"]]}
+{"id": "free-speech", "question": "Do I have a right to freedom of speech in Sri Lanka?", "expect": [["Constitution", "Art.14"]], "must_mention": [["speech"]]}
+{"id": "greeting", "question": "Hi! What can you help me with?", "expect": [], "expect_category": "greeting"}
+{"id": "off-topic", "question": "How do I bake a chocolate cake?", "expect": [], "expect_category": "off_topic"}
+{"id": "not-in-library", "question": "What is the punishment for theft under the Penal Code?", "expect": [], "expect_not_covered": true}

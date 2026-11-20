@@ -1,0 +1,57 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "LawBuddy backend: FastAPI API + RAG agent (ingestion, retrieval, LangGraph) over Sri Lankan legislation"
+requires-python = ">=3.13"
+dependencies = [
+    # API
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "alembic>=1.14",
+    "pyjwt>=2.10",
+    "pwdlib[argon2]>=0.2",
+    "python-multipart>=0.0.18",
+    "sse-starlette>=2.1",
+    "email-validator>=2.2",
+    "google-auth>=2.35",
+    "requests>=2.32",
+    # RAG agent
+    "langgraph>=0.4",
+    "langgraph-checkpoint-postgres>=2.0",
+    "openai>=1.60",
+    "llama-cloud>=1.0",
+    "sqlalchemy[asyncio]>=2.0",
+    "psycopg[binary,pool]>=3.2",
+    "pgvector>=0.3",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "tiktoken>=0.8",
+    "pypdf>=5.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "ruff>=0.8", "httpx>=0.27"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/backend"]
+
+[tool.vercel]
+entrypoint = "app:app"            # backend/app.py -> the FastAPI app in src/backend/main.py
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+extend-exclude = ["alembic/versions"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["backend"]
+known-third-party = ["alembic"]       # the library, not the alembic/ migrations folder
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
