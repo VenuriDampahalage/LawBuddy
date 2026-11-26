@@ -2,8 +2,8 @@
 .env
 
 # Law PDFs and the LlamaParse cache (large binaries, keep out of git)
-backend/data/raw_pdfs/*
-!backend/data/raw_pdfs/.gitkeep
+# backend/data/raw_pdfs/*
+# !backend/data/raw_pdfs/.gitkeep
 backend/data/parsed/
 
 # Evaluation: run results and drafts from real user feedback (private) stay local
